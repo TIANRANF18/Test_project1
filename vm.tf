@@ -1,6 +1,6 @@
 # 部署虚拟机模块
 module "vm" {
-  source = "../../modules/vm"
+  source = "https://github.com/TIANRANF18/AZR_Module_VM.git"
 
   resource_group_name = azurerm_resource_group.main.name
   location            = azurerm_resource_group.main.location
@@ -89,3 +89,4 @@ module "vm" {
     # web02 = { ... }
   }
 }
+
